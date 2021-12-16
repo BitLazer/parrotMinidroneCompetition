@@ -1,0 +1,168 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   21 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "tp_Stage1"\
+      Description  "StateTestPoint"\
+      SFName       "Stage1"\
+      Path         "Stage_1.Stage1"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_active_c6_flightControlSystem"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c6_flightControlSystem"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Stage_1"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Stage_1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Stage_3_"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Stage_3_"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Stage_2_"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Stage_2_"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "coneSumVal"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "coneSumVal"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "turnCheck"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "turnCheck"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "dir_"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "dir_"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "straightPathCheck"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "straightPathCheck"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "aStraight"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "aStraight"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "aTurn"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "aTurn"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "thresh"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "thresh"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "threshStraight"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "threshStraight"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "threshTurn"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "threshTurn"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "coneSumValArrayThresh_data"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "coneSumValArrayThresh"\
+      SrcLocation  ""\
+      Dimensions   [9]\
+    }\
+    ChartData {\
+      Name         "coneSumValArrayThresh_sizes"\
+      Description  "SizeInfo"\
+      SFName       ""\
+      Path         "coneSumValArrayThresh"\
+      SrcLocation  ""\
+      Dimensions   [2]\
+    }\
+    ChartData {\
+      Name         "i"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "i"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "straightPathIter"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "straightPathIter"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "backTurnCheck"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "backTurnCheck"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "dirOld"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "dirOld"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
